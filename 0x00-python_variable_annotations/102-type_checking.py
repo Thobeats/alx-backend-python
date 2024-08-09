@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Typed Functions"""
-from typing import Tuple, List
+from typing import Tuple, List, Any
 
 
-def zoom_array(lst: Tuple, factor: int = 2) -> List:
+def zoom_array(lst: Tuple, factor: int = 2) -> List[Any]:
     zoomed_in: Tuple = [
         item for item in lst
         for i in range(factor)
